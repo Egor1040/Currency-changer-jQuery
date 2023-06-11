@@ -1,0 +1,130 @@
+.changer {
+    border-radius: 10px 10px 0 0;
+    max-width: 295px;
+    box-shadow: 2px 2px 2px 2px #a19f9fb2;
+    &__heading {
+        border-radius: 10px 10px 0 0;
+        width: 295px;
+        background-color: #cbe4cc;
+        padding: 15px 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &__logo {
+        width: 25px;
+        height: 25px;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        font-size: 17px;
+        font-weight: 600;
+        color: #4c484b;
+    }
+    &__date {
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+        background-color: #f0f0f0;
+        background-image: linear-gradient(-90deg, #d0d0d0 36%, transparent 30%, transparent 27%, #d0d0d0 33%, #d0d0d0 46%, transparent 103%);
+        background-size: 100% 20px;
+        padding: 0 15px;
+        background-color: silver;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__date-now {
+        font-weight: bolder;
+        color: #473f4c;
+    }
+}
+
+.exchange {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e3e3;
+    padding: 15px 15px;
+    &__title {
+        font-size: 15px;
+        color: #777777;
+    }
+}
+
+.currency-was,
+.currency-became {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-was__value,
+.currency-became__value {
+    background: linear-gradient(to bottom, white 40%, #fffbd2 60%);
+    border-radius: 5px;
+    padding: 0 5px;
+    width: 100%;
+    height: 55px;
+    border: 2px solid silver;
+    text-align: end;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.currency-was input,
+.currency-became input:focus {
+    outline: none;
+}
+
+.currency-was select,
+.currency-became select {
+    background: linear-gradient(to bottom, white 40%, #fffbd2 60%);
+    width: 33%;
+    color: #777777;
+    border-radius: 5px;
+    border: 2px solid silver;
+}
+
+.currency-was select:focus,
+.currency-became select:focus {
+    outline: none;
+    color: #777777;
+}
+
+.get-result {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    &__equal {
+        cursor: pointer;
+        width: 65px;
+        height: 55px;
+        background-color: #e0001a;
+        border: 2px solid #998485;
+        border-radius: 5px;
+        color: white;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__place {
+        cursor: pointer;
+        background-color: #fdfdfd;
+        width: 64.38px;
+        height: 55px;
+        border: 2px solid silver;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

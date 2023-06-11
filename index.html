@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор валют jQuery</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./img/fav-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="changer">
+            <div class="changer__heading">
+                <div class="changer__logo">
+                    <img src="./img/icons8-logo-30.png" alt="logo">
+                </div>
+                <span class="changer__title">Конвертер валют</span>
+            </div>
+
+            <div class="changer__date">
+                <div class="changer__date-now"></div>
+            </div>
+
+            <div class="exchange">
+                <span class="exchange__title">МІНЯЮ</span>
+                <div class="currency-was">
+                    <input class="currency-was__value" type="text" value="0.00">
+                    <select name="valute" id="valuteBefore">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="UAH">UAH</option>
+                    </select>
+                </div>
+
+                <div class="get-result">
+                    <div class="get-result__equal"><span>=</span></div>
+                    <div class="get-result__place">
+                        <img src="./img/mobile-data.png">
+                    </div>
+                </div>
+
+                <span class="exchange__title">ОТРИМУЮ</span>
+                <div class="currency-became">
+                    <input class="currency-became__value" type="text" value="0.00">
+                    <select name="valute" id="valuteAfter">
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
